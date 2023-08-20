@@ -4,12 +4,12 @@ import styled from "styled-components";
 import { fakeUserData } from "../api";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/slice/UserSlice";
+import ShowUsers from "./ShowUsers";
 
 const UserDetails = () => {
   const dispatch = useDispatch();
 
   const addNewUser = (payload) => {
-      console.log(payload);
       dispatch(addUser(payload)); 
   };
 
@@ -26,8 +26,7 @@ const UserDetails = () => {
           </button>
         </div>
         <ul>
-          {/* <li>Hi</li>
-          <li>Hii</li> */}
+          <ShowUsers/>
         </ul>
         <hr />
         <DeleteAllUser />
