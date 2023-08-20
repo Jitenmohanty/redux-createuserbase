@@ -4,11 +4,10 @@ import styled from "styled-components";
 const Navbar = () => {
   return (
     <Wrapper>
-      <div>Welcome, to Thapa Education Hub</div>
       <h1>Admin Table</h1>
 
       <section>
-        <div>One Destination for complete Web Development</div>
+        <div style={{fontFamily:'sans-serif',fontSize:'larger',fontWeight:'bolder',color:'lavender',}}>One Destination for complete Web Development</div>
         <nav>
           <ul className="menuItems">
             <li>
